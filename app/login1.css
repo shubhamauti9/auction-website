@@ -1,0 +1,77 @@
+*
+{ 
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+}
+.login-content
+{
+	margin-top: 13%;
+	margin-left: 35%;
+	width:25%;
+	height:40%;
+	border-radius: 5px;
+	border:1px solid gray;
+	background-color: white;
+	color: black;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+}
+#login-heading
+{
+	margin-left:30%;
+}
+#cross
+{
+	font-size: 18px;
+	margin-left: 16%;
+}
+#cross:hover
+{
+	color:red;
+}
+.loginup
+{
+	margin-left: 5%;
+}
+input	
+{
+	width: 80%;
+	padding: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+input[placeholder="Username"]
+{
+	margin-left:5px;
+}
+#forgot
+{
+	/*margin-left: 75%;*/
+}
+font a:hover
+{
+	color: red;
+}
+#submit-button
+{
+	font-size: 20px;
+	border-radius: 25px;
+	color:white;
+	padding: 5px 20px 5px 20px;
+	background-color: steelblue;
+	border: none;
+	outline: none;
+	width:50%;
+	margin-left: 23%;
+}
+#submit-button:hover
+{
+	background-color: red;
+}
+#phplogin
+{
+	margin-left:5%;
+	color: red;
+	font-size:16px;
+}

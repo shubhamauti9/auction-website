@@ -1,0 +1,71 @@
+footer 
+{ 
+  display: block;
+  padding: 2vh 15vw 0 15vw;
+  height:auto;
+
+}
+.l1
+{
+  background: url(https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-position: center;
+  background:linear-gradient(to bottom, rgba(9,12,30,0.9) 0%,rgba(0,0,0,0.9) 100%);
+  color: white;
+}
+.logo1
+{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 25px;
+  text-align: center;
+}
+#inline-content
+{
+  padding-bottom: 4%;
+}
+#fc1
+{
+  display: flex;
+  justify-content: center;
+}
+#fc1 li
+{
+  margin-right: 1vw;
+}
+#fc2
+{
+  display: flex;
+  justify-content: center;
+}
+#fc2 li
+{
+  margin-right: 1vw;
+}
+#fc3
+{
+  display: flex;
+  justify-content: center;
+}
+#fc3 li
+{
+  margin-right: 1vw;
+}
+#f1
+{
+  font-size: 20px;
+}
+li a
+{
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+ul#inline-content li
+{
+  list-style-type: none;
+}
+ul#inline-content li a
+{
+  font-family: 'Roboto', sans-serif;
+}

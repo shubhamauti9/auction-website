@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+	<script src="signup.js"></script>
+</head>
+<body onload="generateCaptcha()">
+			<div class="card-space" style="width: 90vw;margin-left: 5vw;" style="text-align: center;">
+				<div class="card" align="left" style="height: auto; width: fit-content">
+	  				<div class="container" style="font-family: 'Poppins', sans-serif;">
+	  					<h1 style="margin-bottom: 30px;">Registration Form</h1>
+						<form name="myForm" onsubmit="return validateForm()" method="POST" action="boly11otp.php"  style="width: 95%;">
+							
+							<div class="fc1">
+								<label>First Name</label>
+								<input type="text" name="fname" style="width: 250px;height:31.33px">
+							</div>
+							<div class="fc2">
+								<label class="rightn">Last Name</label>
+								<input type="text" name="lname"  class="righti" style="width: 250px;height:31.33px">
+							</div>
+
+							<div class="fc1">
+								<label>DOB</label>
+								<input type="date" name="dob" id="DOB" onblur="calculate_age()" >
+							</div>
+							<div class="fc2">
+								<label class="rightla" style="margin-left: 7px;">Age:</label>
+								<input type="text" name="age" id="AGE" readonly class="righti" style="width: 250px;height:31.33px;margin-left: 7px;">
+							</div>
+
+
+							<div class="fc1">
+								<label>Email</label>
+								<input type="email" name="email"  placeholder="xyz@gmail.com" style="width: 250px;height:31.33px">
+							</div>
+							<div class="fc2">
+								<label class="rightla">Mobile Number</label>
+								<input type="number" name="mno"  class="righti" style="width: 250px;height:31.33px">
+							</div>
+
+
+							<div class="fc1">
+								<label>Address</label>
+								<input type="text" name="address" style="width: 250px;height:31.33px">
+							</div>
+							<div class="fc2">
+								<label class="rightlg">Alternate Address</label>
+								<input type="text" name="budget"  class="righti" style="width: 250px;height:31.33px">
+							</div>
+
+
+							<div class="fc1">
+								<label>Choice of bid</label>
+								<select name="bidlist" style="border: groove;border-radius: 3px;outline:none;padding: 5px 10px 5px 10px;color: groove;">
+				  					<option value="Select" style="color: black;">Select</option>
+				  					<option value="Antique" style="color: black;">Antique</option>
+				  					<option value="Car" style="color: black;">Car</option>
+				  					<option value="Bike" style="color: black;">Bike</option>
+				  					<option value="Daily use" style="color: black;">Daily use</option>
+				  					<option value="Mobile" style="color: black;">Mobile</option>
+								</select>
+							</div>
+							<div class="fc2gender">
+								<label class="rightb" style="margin-left: 7px;">Gender</label>
+								<div class="fc2gendertype">
+									<label class="rightg" style="font-size:20px;margin-left: 7px;">Male <input type="radio" name="gender" value="Male" style="vertical-align: text-bottom;"></label>&nbsp&nbsp
+									<label class="rightg" style="font-size:20px;">Female <input type="radio" name="gender" value="Female" style="vertical-align: text-bottom;"></label>&nbsp&nbsp
+									<label class="rightg" style="font-size:20px;">Others <input type="radio" name="gender" value="Others" style="vertical-align: text-bottom;"></label>
+								</div>
+							</div>
+							<br><br><br><br>
+							
+							<div class="fc1" style="clear: both;">
+								<label>Password</label>
+								<input type="password" name="password" style="width: 250px;height:31.33px">
+							</div>
+							<div class="fc2">
+								<label class="rightrp">Retype Password</label>
+								<input type="password" name="repassword"  class="righti" style="width: 250px;height:31.33px">
+							</div>
+
+
+							<div class="fc1">
+								<label>Security Question</label>
+								<input type="text" name="sq"  placeholder="Name of your first school" style="width: 250px;height:31.33px">
+							</div>
+							<div class="fc2">
+								<input class="rightin" type="text" id="captcha" disabled  style="width: 110px;height:32.33px;padding: 0;height: 21.33px; text-align: left;color:black;">
+								<input type="text" name="captchaa" id="it" placeholder="captcha" class="rightin"  style="width: 250px;height:31.33px">
+							</div>
+							<br>
+							<div class="fc1">
+								<label id="check" style="color:red;"><input type="checkbox" name="fd" style="vertical-align: text-bottom;">&nbsp <b>Terms and Conditions</b></label>
+							</div>
+							<br><br><br>
+							<div style="display: flex;justify-content: center;">
+								<button type="submit" class="update" name="submit" >Submit</button>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>	
+</body>
+</html>

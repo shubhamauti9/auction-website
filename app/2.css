@@ -1,0 +1,41 @@
+body{
+	background-color: grey;
+}
+
+.ff1{
+	font-family: sans-serif;
+}
+
+#ss1{
+	background-color: lightgreen;
+	border:2px solid blue;
+	font-style: italic;
+	text-decoration: underline;
+	color: FF66BCH;
+	width: 72px;
+	height: 40px;
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+.st1
+{
+	width: 25%;
+  	padding: 12px 20px;
+  	margin-left: 20px;
+  	box-sizing: border-box;
+  	border: 5px solid powderblue;
+}
+
+input.largerCheckbox { 
+    width: 20px; 
+    height: 20px;
+   	margin-left: 20px; 
+} 
+
+#captcha{
+	text-decoration: line-through;
+	font-size: 100%;
+	font-weight: bold;
+	text-shadow: 3px 3px yellow;
+}

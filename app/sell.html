@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="seller.js"></script>
+	<title>Boly</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lobster|Poppins|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="sell.css">
+</head>
+<body>
+	<div>
+		<nav class="navbar" id="navid">
+					<ul class="nav-content">
+							<li class="nav-padding left hamcon1">
+								<div class="dropdown">
+								    <button class="dropbtn" >
+								    	<font class="anchor">&nbsp<i class="fa fa-bars"></i></font> 
+								    </button>
+								    <div class="dropdown-content">
+								      <a href="#" class="dropanch">History</a>
+								      <a href="#" class="dropanch">Selled Products</a>
+								      <a href="#" class="dropanch">Purchased Products</a>
+								      <a href="#" class="dropanch">Edit Profile</a>
+								      
+								    </div>
+								 </div>
+							</li>
+						<li id="logo"><a href="#" class="anchor" style="font-size: 25px;">Boly.com</a></li>
+							<li class="nav-padding left hamcon1">
+								<div class="dropdown">
+								    <button class="dropbtn" >
+								    	<font class="anchor">Buy <i class="fa fa-caret-down"></i></font> 
+								    </button>
+								    <div class="dropdown-content">
+								      <a href="#" class="dropanch">Antique</a>
+								      <a href="#" class="dropanch">Car</a>
+								      <a href="#" class="dropanch">Bike</a>
+								      <a href="#" class="dropanch">Daily Use</a>
+								      <a href="#" class="dropanch">Mobile</a>
+								    </div>
+								 </div>
+							</li>
+							<!--<li class="nav-padding left hamcon1">
+								<div class="dropdown">
+								    <button class="dropbtn" >
+								    	<font class="anchor">Sell <i class="fa fa-caret-down"></i></font> 
+								    </button>
+								    <div class="dropdown-content">
+								      <a href="#" class="dropanch">Antique</a>
+								      <a href="#" class="dropanch">Car</a>
+								      <a href="#" class="dropanch">Bike</a>
+								      <a href="#" class="dropanch">Daily Use</a>
+								      <a href="#" class="dropanch">Mobile</a>
+								    </div>
+								 </div>
+							</li>-->
+							<li class="nav-padding left hamcon1">
+								<div class="dropdown">
+								    <button class="dropbtn" >
+								    	<font class="anchor">About</font> 
+								    </button>
+								 </div>
+							</li>
+							<li class="nav-padding left hamcon1">
+								<div class="dropdown">
+								    <button class="dropbtn" >
+								    	<font class="anchor3">Contact Us</font> 
+								    </button>
+								 </div>
+							</li>
+							<li class="nav-padding right2 hamcon3"><a href="login.php" class="anchor3">Log Out</a></li>
+							<li class="nav-padding right1 hamcon2"><a href="signup.html" class="anchor3">Welcome,Name<i class="fa fa-user"></i></a>
+						</li>
+					</ul>
+		</nav>
+	</div>
+    <div class="card-space">
+		<div class="card">
+	  			<div class="container" style="font-family: 'Merriweather', serif">
+	  				<form name="seller" onsubmit="return validate()"  method = "POST"  enctype="multipart/form-data">
+					<h1>SELL FORM</h1>
+					<br><br>
+					<div class="label-pad">	
+		  					<label>Product Name <label style="padding-right: 1.8em; padding-left: 6.5em;">:</label>  </label>
+		  					<input type="text" name="pname" class="text1">
+		  			</div>
+					<br>
+					<div class="label-pad">	
+		  					<label>Description <label style="padding-right: 1.8em; padding-left: 7.5em;">:</label>  </label>
+		  					<textarea type="text" name="des" class="text4"></textarea>
+		  			</div>
+					<br>
+					<div class="label-pad">	
+		  					<label>Product Type <label style="padding-right: 1.8em; padding-left: 6.8em;">:</label>  </label>
+		  					<select  name="bd" class="text3">
+								<option value="select">select</option>
+								<option value="antique">Antique</option>
+								<option value="bike">Bike</option>
+								<option value="car">Car</option>
+								<option value="dailyuse">Daily use</option>
+								<option value="mobile">Mobile</option>		
+							</select>
+		  			</div>
+		  			<!--use class:class="st1" in above which shubham removed from mishra code-->
+					<br>
+					<div class="label-pad">	
+		  					<label>Base Amount <label style="padding-right: 1.8em; padding-left: 6.75em;">:</label>  </label>
+		  					<input type="number" name="bamount" min="0.00" step="0.01" class="text1"> &nbsp &nbsp
+							<label>(In Rupees)</label>
+		  			</div>
+					<br>
+					<div class="label-pad">	
+		  					<label>Bid Closing Time <label style="padding-right: 1.8em; padding-left: 5.0em;">:</label>  </label>
+		  					<input type="datetime-local" name="etime" class="text1">
+		  			</div>
+					<br>
+					<div class="label-pad">	
+		  					<label>Product Image <label style="padding-right: 1.8em; padding-left: 6.3em;">:</label>  </label>
+		  					<input type="file" name="img" class="text2">
+		  			</div>
+					<br>
+
+					<br>
+					<div class="button-pad">
+	  						<input type="submit" name="submit" class="update">
+	  				</div>
+					
+					</form>
+	  			</div>
+		</div>
+	</div>
+	
+
+	<footer class="l1" align="center">
+			<div class="fp">
+				<p class="logo1">Boly.com</p>
+				<br>
+	    		<ul id="inline-content">
+	    			<div id="fc1">
+	    				<li class="di"><a href="#">©2019 Boly pvt. ltd.</a></li>
+	    			</div>
+	    			<div id="fc2">
+	    				<li class="di"><a href="#">Terms & conditions&nbsp|</a><a href="#">&nbspPrivacy Policy</a></li>
+	    			</div>
+	    			<div id="fc3">
+						<li><a href="#"><i class="fa fa-facebook footer-short-icon"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin footer-short-icon"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram footer-short-icon"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter footer-short-icon"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube footer-short-icon"></i></a></li>
+	    			</div>
+				</ul>
+			</div>
+		</footer>
+
+</body>
+</html>
+<?php
+session_start();
+$e = $_SESSION['email'];
+if(isset($_POST['submit']))
+{
+	$n = $_POST['pname'];
+	$des = $_POST['des'];
+	$bd = $_POST['bd'];
+	$am = $_POST['bamount'];
+	$et = $_POST['etime'];
+	$fi = $_FILES['img']['name'];
+	$temping = $_FILES['img']['tmp_name'];
+	$f = "img/".$fi;
+	$conn = mysqli_connect("localhost","root","","boly");
+	move_uploaded_file($temping,$f);
+	$sql = "INSERT INTO product (name,des,img,bamount,bd,edate,seller) VALUES ('$n','$des','$f','$am','$bd','$et','$e')";
+	$run = mysqli_query($conn,$sql);
+	
+	
+	echo '<script type="text/javascript"> 
+		  alert("Product Uploaded Successfully");
+		 	</script>';	
+	
+		mysqli_commit($conn);
+		mysqli_close($conn);
+}
+?>
+<a href="3.php">go to personal page</a>
